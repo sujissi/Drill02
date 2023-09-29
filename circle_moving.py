@@ -7,17 +7,14 @@ grass = load_image('grass.png')
 character = load_image('character.png')
 
 x = 400
-y = 90 + 100
-r = 100
-t = 0
-
+y = 90 + 200
+r = 200
 while (True):
     clear_canvas_now()
     grass.draw_now(400,30)
     character.draw_now(x,y)
-    
-    x = math.cos(t*2*math.pi)*r
-    y = math.sin(t*2*math.pi)*r
+    x = math.cos(*2*math.pi)*r
+    y = math.sin(*2*math.pi)*r
 
     delay(0.01)
    
